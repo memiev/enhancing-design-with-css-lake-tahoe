@@ -1,0 +1,153 @@
+/* Web Fonts ----------------------- */
+
+@font-face{
+  font-family: "Abolition Regular";
+  src: url("../fonts/abolition-regular-webfont.woff") format("woff");
+}
+
+/* Base Styles --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+img {
+  width: 100%; /* responsive images */
+}
+
+body{
+  margin: 1rem;
+  font: 300 100%/1.5 'Work Sans', sans-serif;
+  color: #454959;
+
+}
+
+a{
+  color: #cc4e13;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font: 400 4rem/1.1 'Abolition Regular', Impact, Charcoal, sans-serif;
+}
+
+
+h1{
+  font-size: 4rem;
+
+            /* ляво-дясно  // нагоре-надолу // блур // цвят */
+  text-shadow: -15px             10px           4px     rgb(129, 129, 129, .5 )
+  /* ако изолзваме rgba(5,3,5, .5) може да намалим opacity-то; */
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+/* Main Styles --------------------- */
+
+header{
+  margin: -1rem -1rem 1rem ;
+  padding: 10vh 1rem;
+  background: url(../img/mountains.jpg) center / cover no-repeat #c55927;
+  /* background-blend-mode: multiply; */
+  color: white;
+}
+
+header,footer{
+  text-align: center;
+}
+main{
+  hyphens: auto;
+}
+
+section{
+  padding: 4rem 0rem ;
+  border-bottom: 1px dashed grey;
+}
+
+.title{
+  letter-spacing: 1px;
+}
+
+.callout{
+  padding: 0.25rem 1rem;
+  margin: 1rem auto;
+
+  display: block;
+  width: 250px;
+
+  border-radius: 20px/10px;
+  box-shadow: 1px 4px 5px rgb(0,10,30 , .8) ;
+
+  background-image: linear-gradient(-30deg, #cc4e13 0%,firebrick 25%, papayawhip 100%);
+  color: white;
+
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+#wildlife{
+  padding: 5% 5%;
+  margin: 15px;
+  border-top: 12px solid #f5753b;
+
+  border-radius: 25px 0 25px 0;
+  /* border-top: 12px solid #f3753b; */
+  background: url(../img/bear.jpg) center / cover #454959;
+  color: white;
+  /* box-shadow: 0 0 10px 10px rgba(216, 90, 90, 0.8); */
+  /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+  box-shadow: inset  0 0 20px 10px rgb(0, 10, 20, 0.8);
+  box-sizing: border-box;
+  }
+
+  img{
+    border-radius: 10px;
+  }
+
+  .column:first-child{
+    margin-bottom: 4rem;
+  }
+
+
+/* Media Queries ------------------- */
+
+@media screen and (min-width: 720px ){
+
+  header{
+    padding: 25vh 1rem;
+  }
+
+  h1{
+    font-size: 5rem;
+  }
+
+  .title{
+    font-size: 1rem;
+  }
+  .intro{
+    padding: 0 15%;
+    font-size: 1.5rem;
+  }
+
+  .column{
+    display: inline-block;
+    width: 48%;
+    margin-right: -4px;
+  }
+
+  .column:first-child{
+    margin-right: calc(4% - 4px);
+
+  }
+
+
+}
